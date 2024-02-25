@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c491b8531eec05ba41a11d9276a5749",
+    "content-hash": "957e08196079c8c3acc2ae92a06fc843",
     "packages": [
         {
             "name": "brick/math",
@@ -1893,6 +1893,56 @@
                 }
             ],
             "time": "2024-01-28T23:22:08+00:00"
+        },
+        {
+            "name": "mimaxuz/role-manager",
+            "version": "v2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MIMAXUZ/role-manager.git",
+                "reference": "85c7839eb003414d27fe7a11bb71b8d7f5655731"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MIMAXUZ/role-manager/zipball/85c7839eb003414d27fe7a11bb71b8d7f5655731",
+                "reference": "85c7839eb003414d27fe7a11bb71b8d7f5655731",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^v7.0|^v8.0|^v9.0|^10.0",
+                "illuminate/database": "^v8.0.0|^v9.0.0|^9.22.1|^10.0",
+                "php": "^7.2|^8.0.2|^8.1|^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MIMAXUZ\\LRoles\\Providers\\PermissionsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MIMAXUZ\\LRoles\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oktam Yaqubov",
+                    "email": "oktam@yaqubov.info"
+                }
+            ],
+            "description": "Simple Laravel roles and permissions for Laravel applications",
+            "homepage": "https://github.com/MIMAXUZ/role-manager",
+            "support": {
+                "issues": "https://github.com/MIMAXUZ/role-manager/issues",
+                "source": "https://github.com/MIMAXUZ/role-manager/tree/v2.0.6"
+            },
+            "time": "2023-02-20T07:19:26+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5870,6 +5920,68 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laravel/breeze",
+            "version": "v1.28.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "c8bd0a8557aa2b0597bae762d9926b819d886419"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/c8bd0a8557aa2b0597bae762d9926b819d886419",
+                "reference": "c8bd0a8557aa2b0597bae762d9926b819d886419",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^10.17",
+                "illuminate/filesystem": "^10.17",
+                "illuminate/support": "^10.17",
+                "illuminate/validation": "^10.17",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2024-02-19T02:47:27+00:00"
         },
         {
             "name": "laravel/pint",
