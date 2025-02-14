@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use App\Models\Application\Application;
 use App\Models\Role_Permission\Role;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
@@ -72,9 +74,12 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
-
     public function role(): BelongsTo
     {
         return $this->belongsTo(Role::class);
+    }
+    public function applications(): HasMany
+    {
+        return $this->hasMany(Application::class);
     }
 }
