@@ -11,8 +11,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-include 'manager.php';
-include 'client.php';
+require __DIR__.'/manager.php';
+require __DIR__.'/client.php';
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

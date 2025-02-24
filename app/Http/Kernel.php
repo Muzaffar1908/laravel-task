@@ -2,6 +2,9 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\ClientMiddleware;
+use App\Http\Middleware\JWTMiddleware;
+use App\Http\Middleware\ManagerMiddleware;
 use App\Http\Middleware\RoleMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -25,7 +28,9 @@ class Kernel extends HttpKernel
     ];
 
     protected $routeMiddleware = [
-        'role' => RoleMiddleware::class,
+        'authManager' => ManagerMiddleware::class,
+        'authClient' => ClientMiddleware::class,
+//        'jwt' => JwtMiddleware::class,
     ];
 }
 
